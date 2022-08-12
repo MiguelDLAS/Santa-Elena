@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+header{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #110e0e)
+}

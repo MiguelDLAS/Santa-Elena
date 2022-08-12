@@ -11,4 +11,7 @@ db = SQLAlchemy(app)
 from exfabrica.views.auth import auth
 app.register_blueprint(auth)
 
+from exfabrica.views.pagina_web import pagina_web
+app.register_blueprint(blog)
+
 db.create_all()

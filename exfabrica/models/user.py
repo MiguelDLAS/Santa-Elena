@@ -1,11 +1,11 @@
 from exfabrica import db
 
 
-class User(db.model) :
+class User(db.Model):
     __tablename__ = 'users'
-    id = db.colum(db.Integer, primary_key=True)
+    id = db.column(db.Integer, primary_key=True)
     username = db.column(db.string(50))
-    password = db.column(bd.text)
+    password = db.column(bd.Text)
 
     def __init__(self, username, password) -> none:
         self.username = username

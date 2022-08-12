@@ -1,6 +1,6 @@
 class config:
     debug = True
-    testing = True
+    Testing = True
 
     #configuracion de base de datos 
     SQLALCHEMY_TRACK_MODIFICATIONS = false
@@ -12,3 +12,4 @@ class pruductionConfig(config):
 class Developmenconfig(config):
       SECRET_KEY = 'dev'
       DEBUG = True
+      Testing = True
