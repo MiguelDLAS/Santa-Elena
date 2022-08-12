@@ -3,6 +3,10 @@
     margin: auto;
     padding: 0;
 }
+html {
+    font-size: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
 header{
 
     position: relative;
