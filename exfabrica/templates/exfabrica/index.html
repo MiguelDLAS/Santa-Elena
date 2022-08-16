@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exfabrica Santa Elena</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
 <body>
     <header>
-        <img src="/static/img/descarga.jpg" width="99%"alt=""/>
+        <img src="/static/img/homes-bg.jpg" width="100%"alt="50"/>
         <div class="header--botton">
+          
+        
+
+
+    
+            <div class="contenedor">
+                <a class="youtube" href="https://youtube.com/channel/UCnm9B7Tj03gEP19sTND7Bjw"> <i class="fa fa-youtube-play"></i> </a>
+                <a class="facebook" href="https://www.facebook.com/Ury3l.UoU"> <i class="fa fa-facebook"></i> </a>
+                <a class="github" href="https://wa.me/522214351907?text=Que%20tal,%20me%20interesa%20un%20curso%20de%20tu%20sitio%20web"> <i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
+                <a class="instagram" href="https://www.instagram.com/ut_tlaxcala/"> <i class="fa fa-instagram"></i> </a>
+            </div>
+    
+    
+    
+            
+        </header>
+       
+
 
         </div>
 
@@ -24,6 +43,45 @@
         >login <span></span> </a> 
     </div>
 </header>
-    
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="{{ url_for('index') }}">Santa Elena Ex-Fabrica</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menú
+            
+          </button>
+          
+          <i class="fa fa-bars"></i>
+            <i class='bx bx-user'></i>
+             <i class='bx bxs-user'></i>
+            </div>
+            
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('index') }}">Portada</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('reseñas') }}">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('auth.logout') }}">Salir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('auth.login') }}">Entrar</a>
+              
+          </li>
+        </ul>
+          </div>
+        </div>
+      </nav>
 </body>
 </html>

@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	text-align: center;
+}
+
+
+
+form {
+	padding: 50px 20px;
+	background-color: #ededed;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: #444
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+input[type='submit']{
+	background-color: rgb(85, 248, 139);
+	color: #fff;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
+
+
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
+
+#login, #registro{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: whitesmoke;
+    opacity: .8;
+    box-shadow: 10px, 10px, 10px, 0px rgba(0, 0, 0, .5);
+}
+#link #salir {
+    text-align: right;
+    font-size: 20px;
+    color: blue;
+    padding-right: 40px;
+    padding-top: -20px;
+}
+#salir p {
+    text-align: left;
+    color: var(--primary);
+    font-size: 50px;
+    font-weight: 300;
+    display: inline-block;
+    padding-right: 23rem;
+    padding-top: 10px;
+}

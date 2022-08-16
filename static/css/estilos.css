@@ -1,0 +1,648 @@
+:root {
+    --primary:#23a896; 
+    --secondary:#fdd1fe;
+    --just-white: rgba(255, 255, 255, 0.856);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", Arial, Sans-serif;
+    font-size: 16px;
+    background-color: var(--primary);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*-----------------HEADER------------------*/
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary);
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.barra {
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding-top: 20px;
+    background-color: whitesmoke;
+}
+
+
+.login {
+    height: 70px;
+    background: url('../img/bg-textura.png');
+    padding-top: 20px;
+    text-align: right;
+}
+
+
+.btn-1, 
+.btn-2 {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 1.5rem;
+    color: var(--primary);
+    background-color: whitesmoke;
+    border-radius: 6px;
+    border: 2px solid var(--primary);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.contenedorr {
+    width: 100%;
+    height: 500px;
+    background: url('../img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ .menu {
+    width: 100%;
+    text-align: center;
+}
+
+ .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.mapa p {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: 300;
+    display: inline-block;
+    text-align: center;
+}
+
+.contenedorr .menu a:hover {
+    text-decoration: underline;
+}
+
+.contenedorr .textos {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    margin-inline-start: 80px;
+}
+
+.contenedorr .textos .nombre {
+    font-size: 60px;
+    font-weight: 600;    
+}
+
+.contenedorr .textos .nombre span {
+    font-weight: 300;
+}
+
+.contenedorr .textos h3 {
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+
+
+/*-----------main--------------*/
+.main {
+    background: url('../img/bg-textura.png');
+    background-repeat: repeat;    
+}
+
+.main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative;
+}
+.main .acerca-de .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}.main .acerca-de .foto img {
+    vertical-align: top;
+    width: 100%;
+}
+.main .acerca-de article {
+    background: #fff;
+    padding: 48px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+.main .acerca-de article h3 {
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .acerca-de article p {
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.main .menu {
+    padding-top: 570px;
+    margin-bottom: 50px;
+}
+.main .menu .contenedor .titulo {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 18px;
+    overflow: hidden;
+}
+.main .menu article {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.main .menu .categoria {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main .menu .platillo {
+    margin-bottom: 30px;
+    padding-bottom: 28px;
+    border-bottom: 4px dotted #000;
+    overflow: hidden;
+}
+.main .menu .nombre {
+    font-size: 30px;
+    margin-bottom: 15px;
+    float: left;
+}
+.main .menu .precio {
+    font-size: 25px;
+    margin-bottom: 15px;
+    float: right;
+}
+.main .menu .descripcion {
+    font-size: 22px;
+    color: #676767;
+    clear: both;
+}
+
+.main .galeria {
+    overflow: hidden;
+}
+
+.main .galeria .foto {
+    width: 25%;
+    float: left;
+}
+
+.main .galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+
+.main .galeria .foto:hover img {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.main .ubicacion {
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.main .contenedor .ubicacion .titulo {
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .ubicacion .direccion {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+}
+.main .ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.main .ubicacion .direccion .calle {
+    margin-bottom: 15px;
+}
+.main .ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 30px;
+}
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+footer {
+    background:  #000;
+}
+
+footer .copyright
+{
+    text-align: center;
+    padding: 15px 0;
+    color:  #fff;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 800px){
+    .contenedorr .contenedor {
+        position: static;
+        height: auto;
+    }
+    .contenedorr .textos {
+        position: static;
+        margin: 100px 0;
+        text-align: center;
+    }
+    .contenedorr .menu {
+        text-align: center;
+    }
+    .contenedorr .menu a {
+        margin: 10px 20 px;
+    }
+    .contenedorr.textos .nombre {
+        font-size: 30px;
+        text-align: center;
+    }
+    .contenedorr .textos h3 {
+        font-size: 18px;
+    }
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+    .main .acerca-de article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px, 0);
+    }
+    .main .menu {
+        padding-top: 300px;
+    }
+    .main .menu article {
+        width: 100%;
+    }
+    .main .galeria .foto {
+        width: 50%;
+    }
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main .acerca-de article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .main .menu article .nombre,
+    .main .menu article .precio {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main .ubicacion .direccion{
+        margin-bottom: 15px;
+    }
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    
+}
+
+.plans-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans-title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--primary);
+}
+
+.plans-title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--slider {
+    display: flex;
+    height: 480px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 auto;
+    
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 20%;
+    min-width: 200px;
+    max-width: 450px;
+    height: 350px;
+    margin: 50px 30px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89. 73, 30, 0.16);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: .8rem;
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: var(--just-white);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.plan-card--title {
+    padding-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--primary);
+}
+
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.plan-card--saving {
+    font-size: .9rem;
+    color: #757575;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 4px;
+    margin-top: -15px;
+    position: static;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contacto {
+    padding: 66px 0;
+    background-color: whitesmoke;
+}
+
+.contacto .contenedor .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: var(--primary);
+    text-align: center;
+}
+
+.contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+.contacto .formulario input[type="text"]:focus,
+.contacto .formulario input[type="email"]:focus,
+.contacto .formulario textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.contacto .formulario textarea {
+    width: 100%;
+    height: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+.contacto .formulario .boton {
+    margin: auto;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,1.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,1.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,1.5);
+}
+
+.contacto .formulario .boton:haver {
+    background: var(--primary);
+}
+
+.redes-sociales {
+    padding: 8px;
+}
+.redes-sociales .contenedor {
+    display: flex;
+    justify-content: end;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.redes-sociales .youtube:hover {
+    background: #cd201f;
+}
+
+.redes-sociales .facebook:hover {
+    background: #3b5998;
+}
+
+.redes-sociales .github:hover {
+    background: #00BB2D;
+}
+
+.redes-sociales .instagram:hover {
+    background: #3f729b;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .menu a {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .contenedorr .textos .nombre {
+        font-size: 40px;
+        padding-top: -20px;
+    }
+    .redes-sociales {
+        background: var(--primary);
+        padding: 1px;
+        padding-bottom: 10px;
+        
+    }
+    .redes-sociales .contenedor {
+        display: flex;
+        justify-content: center;
+        padding-top: 18px;
+    }
+    
+    .redes-sociales a {
+        color: #fff;
+        text-align: center;
+        width: 50px;
+        display: block;
+        padding: 7px 0;
+        border-radius: 3px;
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    footer .copyright {
+        font-size: 20px;
+    }
+}
